@@ -1,0 +1,5 @@
+{
+    "url": "https://api.github.com/advisories",
+    "parameters": "type=unreviewed",
+    "batch_size": "4"
+}

@@ -1,0 +1,15 @@
+// ).do_request().as(resp, debug("BODY", string(resp.Body)).decode_json().as(body, {
+// ).do_request().as(resp, bytes(resp.Body).decode_json().as(body, {
+
+request(
+    "GET", 
+    state.url
+).with(
+    {
+        "Header":{
+		    // "Accept": "application/vnd.github+json",
+            // "X-GitHub-Api-Version": "2022-11-28",
+            "Authorization": ["Bearer " + token],
+	    }
+    }
+).do_request()
