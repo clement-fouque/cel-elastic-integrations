@@ -1,2 +1,4 @@
 globals:
   token: github_pat_XXX
+regexp:
+  github_link_next: '<([^>]+)>; rel="next"'
