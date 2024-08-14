@@ -6,8 +6,6 @@ request(
         state.url + "?" + {
             "per_page": [state.batch_size],
             "type": ["reviewed"],
-            "sort": ["published"],
-            "order": ["desc"]
         }.format_query()
 ).with(
     {
